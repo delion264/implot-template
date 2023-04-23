@@ -1,17 +1,20 @@
-Build started at 2023-04-23T14:58:03.218287
+Build started at 2023-04-22T22:10:09.437662
 Main binary: /usr/bin/python3
 Build Options: '--native-file native.build'
 Python system: Linux
 The Meson build system
-Version: 0.61.2
+Version: 0.53.2
 Source dir: /home/donny/Projects/imgui-app
 Build dir: /home/donny/Projects/imgui-app/build
 Build type: native build
 Project name: ImGui App
 Project version: undefined
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
 Sanity testing C++ compiler: /usr/bin/g++
 Is cross compiler: False.
-Sanity check compiler command line: /usr/bin/g++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compiler command line: /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/sanitycheckcpp.cc -o /home/donny/Projects/imgui-app/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
 Sanity check compile stdout:
 
 -----
@@ -19,11 +22,14 @@ Sanity check compile stderr:
 
 -----
 Running test binary command: /home/donny/Projects/imgui-app/build/meson-private/sanitycheckcpp.exe
-C++ compiler for the host machine: /usr/bin/g++ (gcc 11.3.0 "g++ (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0")
-C++ linker for the host machine: /usr/bin/g++ ld.bfd 2.38
+C++ compiler for the build machine: /usr/bin/g++ (gcc 9.4.0 "g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C++ linker for the build machine: /usr/bin/g++ ld.bfd 2.34
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
 Sanity testing C++ compiler: /usr/bin/g++
 Is cross compiler: False.
-Sanity check compiler command line: /usr/bin/g++ sanitycheckcpp.cc -o sanitycheckcpp.exe -D_FILE_OFFSET_BITS=64
+Sanity check compiler command line: /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/sanitycheckcpp.cc -o /home/donny/Projects/imgui-app/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
 Sanity check compile stdout:
 
 -----
@@ -31,8 +37,8 @@ Sanity check compile stderr:
 
 -----
 Running test binary command: /home/donny/Projects/imgui-app/build/meson-private/sanitycheckcpp.exe
-C++ compiler for the build machine: /usr/bin/g++ (gcc 11.3.0 "g++ (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0")
-C++ linker for the build machine: /usr/bin/g++ ld.bfd 2.38
+C++ compiler for the host machine: /usr/bin/g++ (gcc 9.4.0 "g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C++ linker for the host machine: /usr/bin/g++ ld.bfd 2.34
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
 Host machine cpu family: x86_64
@@ -40,13 +46,16 @@ Host machine cpu: x86_64
 Target machine cpu family: x86_64
 Target machine cpu: x86_64
 
-Executing subproject glfw 
+Executing subproject glfw method meson 
 
 Project name: glfw
 Project version: 3.3.0
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
 Sanity testing C compiler: /usr/bin/gcc
 Is cross compiler: False.
-Sanity check compiler command line: /usr/bin/gcc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compiler command line: /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/sanitycheckc.c -o /home/donny/Projects/imgui-app/build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
 Sanity check compile stdout:
 
 -----
@@ -54,11 +63,14 @@ Sanity check compile stderr:
 
 -----
 Running test binary command: /home/donny/Projects/imgui-app/build/meson-private/sanitycheckc.exe
-C compiler for the host machine: /usr/bin/gcc (gcc 11.3.0 "gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0")
-C linker for the host machine: /usr/bin/gcc ld.bfd 2.38
+C compiler for the build machine: /usr/bin/gcc (gcc 9.4.0 "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C linker for the build machine: /usr/bin/gcc ld.bfd 2.34
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
 Sanity testing C compiler: /usr/bin/gcc
 Is cross compiler: False.
-Sanity check compiler command line: /usr/bin/gcc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compiler command line: /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/sanitycheckc.c -o /home/donny/Projects/imgui-app/build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
 Sanity check compile stdout:
 
 -----
@@ -66,27 +78,25 @@ Sanity check compile stderr:
 
 -----
 Running test binary command: /home/donny/Projects/imgui-app/build/meson-private/sanitycheckc.exe
-C compiler for the build machine: /usr/bin/gcc (gcc 11.3.0 "gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0")
-C linker for the build machine: /usr/bin/gcc ld.bfd 2.38
+C compiler for the host machine: /usr/bin/gcc (gcc 9.4.0 "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0")
+C linker for the host machine: /usr/bin/gcc ld.bfd 2.34
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmp1ewmkkyf
-Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmp1ewmkkyf/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmp1ewmkkyf/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmp451p0ure
+Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmp451p0ure/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmp451p0ure/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
-
 Compiler stdout:
  
 Compiler stderr:
  
 Library m found: YES
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmp9eybks56
-Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmp9eybks56/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmp9eybks56/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmp5oy_tsma
+Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmp5oy_tsma/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmp5oy_tsma/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
-
 Compiler stdout:
  
 Compiler stderr:
@@ -94,39 +104,38 @@ Compiler stderr:
 Library rt found: YES
 Run-time dependency threads found: YES
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmplfvek6pt
-Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmplfvek6pt/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmplfvek6pt/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmp6t04w9zc
+Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmp6t04w9zc/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmp6t04w9zc/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
-
 Compiler stdout:
  
 Compiler stderr:
  
 Library dl found: YES
 Configuring glfw_config.h using configuration
-Pkg-config binary for 1 is not cached.
+Pkg-config binary for MachineChoice.HOST is not cached.
 Pkg-config binary missing from cross or native file, or env var undefined.
-Trying a default Pkg-config fallback at pkg-config
-Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
 Determining dependency 'vulkan' with pkg-config executable '/usr/bin/pkg-config'
-env[PKG_CONFIG_PATH]: 
+PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --modversion vulkan` -> 0
-1.3.204
-env[PKG_CONFIG_PATH]: 
+1.2.131
+PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --cflags vulkan` -> 0
 
-env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs vulkan` -> 0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config vulkan --libs` -> 0
 -L/usr/lib/x86_64-linux-gnu -lvulkan
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs vulkan` -> 0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config vulkan --libs` -> 0
 -lvulkan
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpnlskc8jg
-Command line:  /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/tmpnlskc8jg/testfile.cpp -o /home/donny/Projects/imgui-app/build/meson-private/tmpnlskc8jg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpl3i_q0mf
+Command line:  /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/tmpl3i_q0mf/testfile.cpp -o /home/donny/Projects/imgui-app/build/meson-private/tmpl3i_q0mf/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
 
 Code:
  #include<stdio.h>
@@ -134,7 +143,7 @@ Code:
         int main(void) {
             printf("%ld\n", (long)(sizeof(void *)));
             return 0;
-        }
+        };
 Compiler stdout:
  
 Compiler stderr:
@@ -147,61 +156,58 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmp5ths1mc_
-Command line:  /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/tmp5ths1mc_/testfile.cpp -o /home/donny/Projects/imgui-app/build/meson-private/tmp5ths1mc_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpnoz26ra3
+Command line:  /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/tmpnoz26ra3/testfile.cpp -o /home/donny/Projects/imgui-app/build/meson-private/tmpnoz26ra3/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
 Compiler stdout:
- install: /usr/lib/gcc/x86_64-linux-gnu/11/
-programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
-libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+ install: /usr/lib/gcc/x86_64-linux-gnu/9/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/9/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/9/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
 
 Compiler stderr:
  
-Run-time dependency vulkan found: YES 1.3.204
-Pkg-config binary for 1 is cached.
+Run-time dependency vulkan found: YES 1.2.131
+Pkg-config binary for MachineChoice.HOST is cached.
 Determining dependency 'x11' with pkg-config executable '/usr/bin/pkg-config'
-env[PKG_CONFIG_PATH]: 
+PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --modversion x11` -> 0
-1.7.5
-env[PKG_CONFIG_PATH]: 
+1.6.9
+PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --cflags x11` -> 0
 
-env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs x11` -> 0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config x11 --libs` -> 0
 -L/usr/lib/x86_64-linux-gnu -lX11
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs x11` -> 0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config x11 --libs` -> 0
 -lX11
-Run-time dependency x11 found: YES 1.7.5
+Run-time dependency x11 found: YES 1.6.9
 Build targets in project: 4
 Subproject glfw finished.
 
-Pkg-config binary for 1 is cached.
+Pkg-config binary for MachineChoice.HOST is cached.
 Determining dependency 'gl' with pkg-config executable '/usr/bin/pkg-config'
-env[PKG_CONFIG_PATH]: 
+PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --modversion gl` -> 0
 1.2
-env[PKG_CONFIG_PATH]: 
+PKG_CONFIG_PATH: 
 Called `/usr/bin/pkg-config --cflags gl` -> 0
 
-env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs gl` -> 0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gl --libs` -> 0
 -L/usr/lib/x86_64-linux-gnu -lGL
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs gl` -> 0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config gl --libs` -> 0
 -lGL
 Run-time dependency gl found: YES 1.2
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpul9b88og
-Command line:  /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/tmpul9b88og/testfile.cpp -o /home/donny/Projects/imgui-app/build/meson-private/tmpul9b88og/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpgh_2kyni
+Command line:  /usr/bin/g++ /home/donny/Projects/imgui-app/build/meson-private/tmpgh_2kyni/testfile.cpp -o /home/donny/Projects/imgui-app/build/meson-private/tmpgh_2kyni/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(void) { return 0; }
-
 Compiler stdout:
  
 Compiler stderr:
@@ -212,33 +218,19 @@ Build targets in project: 6
 ImGui App undefined
 
   Subprojects
-    glfw        : YES
+    glfw: YES
 
-  User defined options
-    Native files: native.build
-
-Found ninja-1.10.1 at /usr/bin/ninja
+Found ninja-1.10.0 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpodu3xxtn
-Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmpodu3xxtn/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmpodu3xxtn/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+Working directory:  /home/donny/Projects/imgui-app/build/meson-private/tmpzfxs_o6z
+Command line:  /usr/bin/gcc /home/donny/Projects/imgui-app/build/meson-private/tmpzfxs_o6z/testfile.c -o /home/donny/Projects/imgui-app/build/meson-private/tmpzfxs_o6z/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
 
 Code:
  
 Compiler stdout:
- install: /usr/lib/gcc/x86_64-linux-gnu/11/
-programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
-libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+ install: /usr/lib/gcc/x86_64-linux-gnu/9/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/9/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/9/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
 
 Compiler stderr:
  
-Running compile:
-Working directory:  /tmp/tmpbtyqz9q_
-Command line:  /usr/bin/g++ /tmp/tmpbtyqz9q_/testfile.cpp -o /tmp/tmpbtyqz9q_/output.obj -D_FILE_OFFSET_BITS=64 -c -std=c++17 
-
-Code:
- int i = static_cast<int>(0);
-Compiler stdout:
- 
-Compiler stderr:
- 
-Compiler accepts -std=c++17: YES
