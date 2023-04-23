@@ -1,5 +1,0 @@
-[options]
-
-[properties]
-native_file = ['native.build']
-
