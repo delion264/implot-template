@@ -9,8 +9,10 @@ Dear ImGui app following Zen Sepiol's YT tutorial
 # 1. Install dependencies
 $ sudo apt install meson ninja-build xorg-dev libglfw3-dev libvulkan-dev
 
-# 2. Clone this repository
+# 2. Clone this repository and clone submodules
 $ git clone https://github.com/delion264/imgui-app.git
+$ git submodule init
+$ git submodule update
 
 # 3. Configure source directory and bundle dependencies
 $ cd imgui-app
