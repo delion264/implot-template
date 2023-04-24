@@ -4,7 +4,8 @@ cc = meson.get_compiler('cpp')
 
 incdir = include_directories('libs/imgui/', 'libs/imgui/backends/')
 
-glfw_lib = subproject('glfw').get_variable('glfw_dep')
+# glfw_lib = subproject('glfw').get_variable('glfw_dep')
+glfw_lib = dependency('glfw3')
 gl = dependency('gl')
 dl_dep = cc.find_library('dl', required : false)
 
