@@ -2,7 +2,7 @@ project('ImGui App', 'cpp')
 
 cc = meson.get_compiler('cpp')
 
-incdir = include_directories('libs/imgui/', 'libs/imgui/backends/')
+incdir = include_directories('libs/imgui/', 'libs/imgui/backends/', 'libs/implot/')
 
 # glfw_lib = subproject('glfw').get_variable('glfw_dep')
 glfw_lib = dependency('glfw3')
@@ -31,6 +31,9 @@ files = files(
     'libs/imgui/imgui_widgets.cpp',
     'libs/imgui/backends/imgui_impl_glfw.cpp',
     'libs/imgui/backends/imgui_impl_opengl3.cpp',
+    'libs/implot/implot.cpp',
+    'libs/implot/implot_items.cpp',
+    'libs/implot/implot_demo.cpp'
 )
 
 executable('app_framework', files, include_directories : incdir, dependencies : [glfw_lib, gl, dl_dep])
